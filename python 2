@@ -69,3 +69,60 @@ a=lst1+lst2
 print("Merged list:",a)
 a.sort(reverse=True)
 print("Descending order:",a)
+#1
+n=input('enter the string')
+v=['a','e','i','o','u']
+v1=0
+c=0
+for i in(n):
+    if i in(v):
+        v1=v1+1
+        continue
+    else:
+        c=c+1
+print('no of vowels:',v1)
+print('no of consonents:',c)
+if v1>c:
+    print('v1 is maximum')
+elif c>v1:
+    print('c is maximum')
+#2
+n=input('enter the string')
+s=["!","@","#","$","%","&","*"," ","'",",","."]
+s1=0
+for i in(n):
+    if i in(s):
+        s1=s1+1
+print(s1)
+#3
+n=input('enter the string')
+c=input('enter the charecter you need to check')
+for i in n:
+    if c in(n):
+        r=n.index(c)
+print('prents in the string',c,r,'is the index' )
+#4
+a=input('enter the string')
+b=a.upper()
+c1=''
+c=sorted(a)
+c1=c1.join(c)
+print(c1)
+print(c1[::-1])
+#5
+a=input('enter the string')
+for i in range(0,len(a)):
+    c=1
+    for j in range(i+1,len(a)):
+        if(a[i]==a[j]and a[i]!=''):
+            c=c+1
+            print(' no.of duplicate wors',c)
+            a=a[:j]+'0'+a[j+1:]
+            if(c>1 and a[i]!='0')
+              print('repeted letters are:',a[i])
+#6
+st=input("Enter a string:")
+v=['a','e','i','o','u']
+result=[i for i in st if i.lower()not in v]
+result=''.join(result)
+print(result)
