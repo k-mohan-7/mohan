@@ -1,4 +1,4 @@
-a=int(input('enter number'))
+a=input('enter number')
 b=len(a)
 for i in range(b):
     for j in range(b):
